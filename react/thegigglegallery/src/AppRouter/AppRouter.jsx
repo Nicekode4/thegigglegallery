@@ -1,8 +1,10 @@
 import React from 'react'
-import Home from "../../Pages/Home/Home";
-
+import Home from "../Pages/Home/Home";
+import {Routes} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 function AppRouter() {
   return (
+
 
 <Routes>
     <Route index element={<Home/>}></Route>
