@@ -1,0 +1,33 @@
+{
+  "name": "thegigglegallery",
+  "version": "1.0.0",
+  "description": "et projekt som indeholder data til børnebøger og reviews",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicekode4/thegigglegallery.git"
+  },
+  "keywords": [
+    "'books'",
+    "'library'",
+    "'book",
+    "reviews'",
+    "'categories'"
+  ],
+  "author": "gruppe1 - my custom shop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nicekode4/thegigglegallery/issues"
+  },
+  "homepage": "https://github.com/Nicekode4/thegigglegallery#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mysql2": "^3.4.0",
+    "nodemon": "^2.0.22",
+    "sequelize": "^6.32.1"
+  }
+}
