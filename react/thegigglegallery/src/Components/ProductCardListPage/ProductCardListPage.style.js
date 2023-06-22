@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ProductCardStyle = styled.article`
+export const ProductCardListPageStyle = styled.article`
 .productImg{
     height: 10vh;
 }
