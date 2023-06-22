@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+
 import GlobalStyle from './root/Global.style.js';
 import AppRouter from './AppRouter/AppRouter.jsx';
 import Header from './Components/Header/Header.jsx'
