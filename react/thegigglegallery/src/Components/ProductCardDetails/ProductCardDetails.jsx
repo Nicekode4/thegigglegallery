@@ -1,15 +1,15 @@
 import React from 'react'
-import { ProductCardStyle } from './ProductCard.style'
+import { ProductCardDetailsStyle } from './ProductCardDetails.style'
 
-function ProductCard(props) {
+function ProductCardDetails(props) {
   return (
-    <ProductCardStyle>
+    <ProductCardDetailsStyle>
         <img src={props.img} alt="product image" className='productImg'/>
         <p className='title'>{props.title}</p>
         <p className='desc'>{props.desc}</p>
         <p className='price'>Kr {props.price}</p>
-    </ProductCardStyle>
+    </ProductCardDetailsStyle>
   )
 }
 
-export default ProductCard
+export default ProductCardDetails
