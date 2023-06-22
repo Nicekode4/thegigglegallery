@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
   return (
-    <div>Header</div>
+    <h1>The Giggle Gallery</h1>
   )
 }
 
