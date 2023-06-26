@@ -1,5 +1,6 @@
 import express from 'express'
 import sequelize from '../config/sequelize.config.js'
+import categoryModel from '../model/catergory.model.js';
 
 const router = express.Router();
 
@@ -7,7 +8,7 @@ const router = express.Router();
 router.get('/init',(req,res) =>{
     try{
         sequelize.sync()
-        console.log('er det hul igennem?')
+        // console.log('er det hul igennem?')
         res.sendStatus(200)
     }
     catch(err){
