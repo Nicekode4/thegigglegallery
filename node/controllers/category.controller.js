@@ -12,12 +12,12 @@ class categoryController {
         res.json(result)
     }
     create = async (req, res) => {
-        // const { id, name } = req.body
-        console.log(req.body);
-        // if(id && name) {
-        //     const model = await categoryModel.create({name: req.body.name})
-        //     return res.json({newid: model.id})
-        // }
+        const  name  = req.Body
+        console.log(req.Body);
+        if( name ) {
+            const model = await categoryModel.create(req.Body)
+            return res.json({newid: model.id})
+        }
     }
 
 }
