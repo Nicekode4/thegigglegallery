@@ -15,16 +15,16 @@ export const ProductCardStyle = styled.article`
 }
 
 .productImg{
-    height: 10vh;
+    height: 100px;
 }
 .title{
-    font-size: 5vw;
+    font-size: 45px;
 }
 .desc{
-    font-size: 2vw;
+    font-size: 20px;
 }
 .price{
-    font-size: 3vw;
+    font-size: 30px;
     font-weight: bold;
 }
 `
