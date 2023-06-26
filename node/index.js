@@ -7,9 +7,9 @@ dotenv.config()
 const port = process.env.PORT
 const app = express()
 
+app.use(categoryRouter)
 app.use(express.urlencoded({ extended: true})) //læse form data
 app.use(initRouter)
-app.use(categoryRouter)
 
 app.listen(port, () => {
     console.log(`serveren kører på http://localhost:${port}`)
