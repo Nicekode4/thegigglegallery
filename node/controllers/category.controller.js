@@ -15,7 +15,7 @@ class categoryController{
         })
 
         console.log(result)
-        res.json(result) // Sender resultatet som JSON
+        res.json(result)
     }
 
     create = async (req, res) => {
@@ -27,14 +27,27 @@ class categoryController{
             }
         }
 
-        
-
+    update = async (req, res) => {
+        const { id, name } = req.body
+            console.log(req.body);
+            if (name && id){
+                const model = await categoryModel.update(req.body, { where: { id: id }})
+                return res.json({newid: model.id})
+            }
+            else {
+                res.send(418)
+            }
+    }
+    delete = async (req, res) => {
+        try{
+            await categoryModel.destroy({ where:{ id: req.params.id }})
+            res.sendStatus(200)
+        }
+        catch(err){
+            req.send(err)
+        }
+    }
 }
-
-
-
-
-
 
 export default categoryController
 
