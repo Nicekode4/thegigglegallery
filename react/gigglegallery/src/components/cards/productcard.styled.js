@@ -19,12 +19,15 @@ export const ProductCardStyle = styled.article`
 }
 .title{
     font-size: 45px;
+    font-family: 'PT Sans', sans-serif;
 }
 .desc{
     font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
 }
 .price{
     font-size: 30px;
+    font-family: 'PT Sans', sans-serif;
     font-weight: bold;
 }
 `
