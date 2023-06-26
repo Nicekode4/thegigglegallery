@@ -25,19 +25,19 @@ export const Footer = () => {
             <p className="email">info@mychoiceshop.dk</p>
             <p className="findos">Find os her:</p>
             <div className="fIcons">
-                <img src={FacebookIcon}/>
-                <img src={InstagramIcon}/>
-                <img src={TwitterIcon}/>
-                <img src={PinterestIcon}/>
-                <img src={LinkedinIcon}/>
+                <img src={FacebookIcon} alt="Facebook"/>
+                <img src={InstagramIcon} alt="Instagram"/>
+                <img src={TwitterIcon} alt="Twitter"/>
+                <img src={PinterestIcon} alt="Pinterest"/>
+                <img src={LinkedinIcon} alt="LinkedIn"/>
             </div>
             <p className="payment">Sikker betaling:</p>
             <div className="pIcons">
-                <img src={DK}/>
-                <img src={Visa}/>
-                <img src={Visa2}/>
-                <img src={MobilePay}/>
-                <img src={MastercCrd}/>
+                <img src={DK} alt="DK"/>
+                <img src={Visa} alt="VISA"/>
+                <img src={Visa2} alt="VISA EX"/>
+                <img src={MobilePay} alt="MobilePay"/>
+                <img src={MastercCrd} alt="MasterCard"/>
             </div>
             <br></br>
             <p className="all">Alle rettigheder forbeholdes</p>
