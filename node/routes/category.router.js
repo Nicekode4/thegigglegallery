@@ -12,7 +12,7 @@ categoryRouter.get('/category', (req, res) => {
 })
 
 categoryRouter.post("/category", (req, res) => {
-    return res.json('post virker')
+    return category.create(req,res)
 })
 
 categoryRouter.put("/category", (req, res) => {
@@ -20,5 +20,5 @@ categoryRouter.put("/category", (req, res) => {
 })
 
 categoryRouter.delete("/category", (req, res) => {
-    return res.json('delet virker')
+    console.log('delet virker');
 })

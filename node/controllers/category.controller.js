@@ -19,10 +19,12 @@ class categoryController{
     }
 
     create = async (req, res) => {
-        const result = await categoryModel({
-            where :{id: req.params.id}
-        })9
-        res.json(result)
+        const name = req.body
+            console.log(req.body);
+            if (name){
+                const model = await categoryModel.create(req.body)
+                return res.json({newid: model.id})
+            }
         }
 
         
