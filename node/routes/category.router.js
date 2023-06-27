@@ -15,7 +15,7 @@ categoryRouter.post("/category", (req, res) => {
     return category.create(req,res)
 })
 
-categoryRouter.put("/category", (req, res) => {
+categoryRouter.put("/category/:id([0-9]*)", (req, res) => {
     return category.update(req,res)
 })
 

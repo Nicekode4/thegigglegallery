@@ -1,13 +1,13 @@
 
 // import db from '..mysql.config/config.js/'
-import categoryModel from "../model/catergory.model.js"
+import productModel from "../model/product.model.js"
 
-class categoryController{
+class productController{
 
     constructor(){}
 
     list = async (req, res) => {
-        const result =  await categoryModel.findAll({
+        const result =  await productModel.findAll({
             limit:5,
             order:['name']
         })
@@ -19,7 +19,7 @@ class categoryController{
         const name = req.body
         console.log(req.body);
         if (name){
-            const model = await categoryModel.create(req.body)
+            const model = await cproductModel.create(req.body)
             return res.json({newid: model.id})
         }
     }
@@ -28,7 +28,7 @@ class categoryController{
         const { id, name } = req.body
         console.log(req.body);
         if (name && id){
-            const model = await categoryModel.update(req.body, { where: { id: id }})
+            const model = await productModel.update(req.body, { where: { id: id }})
             return res.json({newid: model.id})
         } else {
             res.send(418)
@@ -36,7 +36,7 @@ class categoryController{
     }
     delete = async (req, res) => {
         try {
-            await categoryModel.destroy({ where:{ id: req.params.id }})
+            await productModel.destroy({ where:{ id: req.params.id }})
             res.sendStatus(200)
         }
         catch(err) {
@@ -45,7 +45,7 @@ class categoryController{
     }
 }
 
-export default categoryController
+export default productController
 
 
 
