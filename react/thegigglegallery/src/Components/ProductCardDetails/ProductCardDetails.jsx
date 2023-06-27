@@ -8,9 +8,11 @@ function ProductCardDetails(props) {
         <img src={props.img} alt="product image" className='productImg'/>
         <p className='title'>{props.title}</p>
         <div className='ratingDiv'>
-          <h6>4.7 <p>(212 Annmeldelser)</p></h6>
+          <img src="" alt="rating" />
+          <h6>4.7 <span>(212 Annmeldelser)</span></h6>
+          </div>
           <p className='desc'>{props.desc}</p>
-          <div>
+          <div className='priceDiv'>
             <p className='price'>Kr {props.price}</p>
             <div>
               <button>Læg i kurv</button>
@@ -18,14 +20,13 @@ function ProductCardDetails(props) {
             </div>
           </div>
           <hr />
-          <div>
+          <div className='ratingDiv2'>
             <h2>Anmeldelser</h2>
             <button>Skriv en anmeldelse</button>
           </div>
-          <h3>Anmdelser</h3>
           <hr />
           <h2>Ingen anmelder endnu..</h2>
-        </div>
+
     </ProductCardDetailsStyle>
   )
 }
