@@ -13,6 +13,7 @@ function ProductPage() {
     price="339,00"
     img={placeholder}
     lager={2}
+    rating={4.2}
     />
     
     </ProductPageStyle>

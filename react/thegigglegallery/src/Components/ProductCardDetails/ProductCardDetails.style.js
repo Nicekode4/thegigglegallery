@@ -56,7 +56,7 @@ width: 100%;
     display: flex;
     
     width: 100%;
-    img{
+    p{
         padding-right: 2vw;
     }
     h6{
