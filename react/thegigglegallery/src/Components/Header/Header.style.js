@@ -19,7 +19,8 @@ export const HeaderStyle = styled.header`
     }
     h1{
         color: white;
-        font-size: 50px;
+        font-size: 25px;
+        margin-top: 20px;
         padding: 10px;
         letter-spacing: 5px;
         font-family: 'Nanum Pen Script', cursive;

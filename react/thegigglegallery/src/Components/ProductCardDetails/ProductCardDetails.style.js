@@ -11,10 +11,12 @@ width: 100%;
     width: 94%;
 }
 .title{
-    font-size: 4vw;
+    font-size: 6vw;
+    margin-bottom: 2vh;
 }
 .desc{
     font-size: 3vw;
+    margin-top: 2vh;
     color: gray;
 }
 .price{

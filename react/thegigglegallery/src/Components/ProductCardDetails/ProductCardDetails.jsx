@@ -5,6 +5,7 @@ import placeholder from '../../assets/images/placeholder.png'
 function ProductCardDetails(props) {
   return (
     <ProductCardDetailsStyle>
+      <h2>{props.category}</h2>
         <img src={props.img} alt="product image" className='productImg'/>
         <p className='title'>{props.title}</p>
         <div className='ratingDiv'>
