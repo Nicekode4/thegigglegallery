@@ -6,7 +6,7 @@ function ProductCard(props) {
     <ProductCardStyle>
       <div className='section'>
         <div className='card'>
-        <img src={props.img} alt="product image" className='productImg'/>
+        <img src={props.img} alt="product" className='productImg'/>
         <p className='title'>{props.title}</p>
         <p className='desc'>{props.desc}</p>
         <p className='price'>Kr {props.price}</p>

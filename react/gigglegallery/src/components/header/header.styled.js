@@ -5,6 +5,7 @@ export const HeaderStyled = styled.header`
         background-color: #262234;
         display: flex;
         justify-content: center;
+        width: 100%;
     }
     .s1{
         color: #3d8bb6;
@@ -23,5 +24,19 @@ export const HeaderStyled = styled.header`
         padding: 10px;
         letter-spacing: 5px;
         font-family: 'Nanum Pen Script', cursive;
+    }
+
+    .logimg{
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 25px;
+        padding-left: 20px;
+        height: 100%;
+    }
+
+    img{
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
     }
 `

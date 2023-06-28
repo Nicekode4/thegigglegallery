@@ -20,6 +20,7 @@ export const GalleryStyle = styled.article`
     font-size: 50px;
     background-color: white;
     color: #c69a6b;
+    cursor: pointer;
 }
 
 .image{

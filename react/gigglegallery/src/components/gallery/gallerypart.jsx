@@ -17,7 +17,7 @@ const Gallery = ({ images }) => {
     <div className="gallery">
     <div className="border">
       <button className="arrow" onClick={previousImage}>{'<'}</button>
-      <img className="image" src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} />
+      <img className="image" src={images[currentIndex]} alt={`${currentIndex + 1}`} />
       <button className="arrow" onClick={nextImage}>{'>'}</button>
     </div>
     </div>
