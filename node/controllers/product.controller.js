@@ -19,7 +19,7 @@ class productController{
         const name = req.body
         console.log(req.body);
         if (name){
-            const model = await cproductModel.create(req.body)
+            const model = await productModel.create(req.body)
             return res.json({newid: model.id})
         }
     }

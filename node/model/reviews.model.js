@@ -33,6 +33,7 @@ reviewsModel.init({
     {
         sequelize,
         modelname:'reviews',
+        tableName: 'reviews',
         freezeTableName:true,
         createdAt:'created_at',
         updatedAt:'updated_at'

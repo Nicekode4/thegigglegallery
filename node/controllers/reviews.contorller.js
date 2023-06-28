@@ -1,4 +1,4 @@
-import categoryModel from '../model/reviews.model.js'
+import reviewsModel from '../model/reviews.model.js'
 
 // Kontrollerklasse til håndtering af anmeldelser
 class reviewsController{
@@ -29,7 +29,7 @@ class reviewsController{
         const title = req.body
         console.log(req.body);
         if (title){
-            const model = await categoryModel.create(req.body)
+            const model = await reviewsModel.create(req.body)
             return res.json({newid:model.id})
         }
         
@@ -40,7 +40,7 @@ class reviewsController{
         const {id,title} = req.body
         console.log(req.body);
         if(title && id){
-            const model = await categoryModel.update(req.body,{where:{id: id}})
+            const model = await reviewsModel.update(req.body,{where:{id: id}})
             return res.json({newid:model.id})
         }
         else{
@@ -51,7 +51,7 @@ class reviewsController{
 // Metode til at slette en anmeldelse
     delete = async (req, res) =>{
         try{
-            await categoryModel.destroy({where: {id: req.params.id }})
+            await reviewsModel.destroy({where: {id: req.params.id }})
             res.sendStatus(200)
         }
         catch(err){

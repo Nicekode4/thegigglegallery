@@ -1,8 +1,9 @@
 import express from 'express'
+import reviewsController from '../controllers/reviews.contorller.js'
 
 export const reviewsRouter = express.Router()
 
-
+const reviews = new reviewsController()
 
 reviewsRouter.get('/reviews', (req, res) => {
     return res.json(123)
