@@ -2,7 +2,8 @@ import  sequelize  from "../config/sequelize.config.js"
 import { DataTypes, Model } from "sequelize";
 
 class categoryModel extends Model {}
-
+// Definition af attributterne for modellen
+// Определение атрибутов для модели
 categoryModel.init({
         id:{
             type: DataTypes.INTEGER,
