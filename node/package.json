@@ -13,12 +13,14 @@
   },
   "keywords": [
     "'books'",
-    "'library'",
+
+    "'",
+    "library'",
     "'book",
-    "reviews'",
+    "review'",
     "'categories'"
   ],
-  "author": "gruppe1 - my custom shop",
+  "author": "gruppe 1 My custom shop",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Nicekode4/thegigglegallery/issues"
