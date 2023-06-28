@@ -2,8 +2,6 @@
 // import db from '..mysql.config/config.js/'
 import categoryModel from "../model/catergory.model.js"
 
-
-
 class categoryController{
 
     constructor(){}
@@ -11,12 +9,11 @@ class categoryController{
 // Metode til at få en liste over kategorier
     list = async (req, res) => {
         const result =  await categoryModel.findAll({
-            limit:2,
+            limit:5,
             order:['name']
         })
-
         console.log(result)
-        res.json(result) // Sender resultatet som JSON
+        res.json(result)
     }
 
 // Metode til at oprette en ny kategori
@@ -53,11 +50,6 @@ class categoryController{
                     }
 
         }
-
-
-
-
-
 export default categoryController
 
 

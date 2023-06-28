@@ -2,6 +2,8 @@ import express from 'express'
 import sequelize from '../config/sequelize.config.js'
 import categoryModel from '../model/catergory.model.js';
 import reviewsModel from '../model/reviews.model.js';
+import productModel from '../model/product.model.js';
+
 const router = express.Router();
 
 // Rute til at initialisere databaseforbindelsen
