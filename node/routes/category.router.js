@@ -1,3 +1,4 @@
+
 import express from "express"
 import categoryController from "../controllers/category.controller.js"
 
@@ -21,4 +22,5 @@ categoryRouter.put("/category", (req, res) => {
 
 categoryRouter.delete("/category/:id([0-9]*)", (req, res) => {
     return category.delete(req,res)
+
 })

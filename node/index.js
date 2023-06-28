@@ -1,4 +1,5 @@
 
+
 //nmp pakker: nodemon, express,sequelize,dotenv,mysql2
 
 
@@ -13,6 +14,7 @@ dotenv.config();
 
 
 
+
 const port = process.env.PORT
 const app = express()
 
@@ -23,6 +25,7 @@ app.use(reviewsRouter)
 app.listen(port, () => {
 	console.log(`Server kører på http://localhost:${port}`)	
 })
+
 
 
 

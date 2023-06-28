@@ -1,7 +1,7 @@
 {
   "name": "thegigglegallery",
   "version": "1.0.0",
-  "description": "",
+  "description": "et projekt som indeholder data til børnebøger og reviews",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -13,6 +13,7 @@
   },
   "keywords": [
     "'books'",
+
     "'",
     "library'",
     "'book",

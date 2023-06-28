@@ -1,3 +1,4 @@
+
 import mysql2 from "mysql2";
 import dotevn from "dotenv";
 
@@ -15,5 +16,6 @@ const db = mysql2.createConnection({
 
 // Opret forbindelse til databasen
 db.connect();
+
 
 export default db
