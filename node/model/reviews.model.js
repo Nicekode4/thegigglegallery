@@ -24,6 +24,10 @@ reviewsModel.init({
       title:{
         type:DataTypes.STRING,
         allowNull:true,
+      },
+      text:{
+        type:DataTypes.TEXT,
+        allowNull:true,
       }    
     },
     {

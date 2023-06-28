@@ -4,7 +4,7 @@ import categoryModel from '../model/catergory.model.js';
 import reviewsModel from '../model/reviews.model.js';
 const router = express.Router();
 
-
+// Rute til at initialisere databaseforbindelsen
 router.get('/init',(req,res) =>{
     try{
         sequelize.sync()
