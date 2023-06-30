@@ -15,7 +15,8 @@ export const ProductCardHomeStyle = styled.article`
 }
 
 .productImg{
-    height: 100px;
+    height: 40vh;
+    margin-left: 15vw;
 }
 .title{
     font-size: 45px;
