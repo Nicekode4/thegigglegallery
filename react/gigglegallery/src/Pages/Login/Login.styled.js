@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const LoginStyled = styled.div`
 
+
     .loginsection{
         background-color: #3d8bb6;
         width: 100%;
@@ -78,6 +79,13 @@ export const LoginStyled = styled.div`
         background-color: #262234;
         border: none;
         border-radius: 15px;
+        cursor: pointer;
+    }
+
+    button:hover{
+        color: #262234;
+        background-color: white;
+        transition: 0.1s ease;
     }
 // Create User 
 

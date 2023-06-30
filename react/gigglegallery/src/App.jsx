@@ -4,7 +4,6 @@ import AppRouter from "./Router/AppRouter"
 import GlobalStyle from "./assets/GlobalStyle"
 import { Login } from "./Pages/Login/Login"
 
-
 function App() {
 	return (
 		<div className="App">

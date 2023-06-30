@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
+
     .top {
+        position: relative;
         background-color: #262234;
         display: flex;
         justify-content: center;

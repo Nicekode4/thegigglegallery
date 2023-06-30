@@ -23,11 +23,11 @@ export const Login = () => {
                             <p>Adganskode:</p>
                             <input type="password" name="password" id="password"/>
                         </div>
-                        <div className="register">
-                            <div className="secpassword">
-                                <p>Gentag Adganskode</p>
-                                <input type="password" name="repeatpassword" id="password"/>
-                            </div>
+                <div className="register" id="repeatpasswordContainer">
+                    <div className="secpassword">
+                        <p>Gentag Adganskode</p>
+                        <input type="password" name="repeatpassword" id="password"/>
+                </div>
                         </div>
                         <div className="loginbtn">
                             <button>Login</button>
@@ -44,4 +44,5 @@ export const Login = () => {
 
 function showreg(){
     document.getElementById('reguser').classList.toggle('activereg');
+    document.getElementById('repeatpasswordContainer').classList.toggle('activereg');
 }
